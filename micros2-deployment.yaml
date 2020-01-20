@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: micros2-deployment
+  labels:
+    component: micros2
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+        component: micros2
+  template:
+    metadata:
+      labels:
+        component: micros2
+    spec:
+      containers:
+      - name: micros2
+        image: sannaman/micros2
+        ports:
+        - containerPort: 9090
