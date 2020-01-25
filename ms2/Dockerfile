@@ -1,4 +1,4 @@
 FROM openjdk:alpine
-EXPOSE 9091:9091
+EXPOSE 9092:9092
 ADD /target/*.jar ms2.jar
 ENTRYPOINT ["java","-jar","/ms2.jar"]
