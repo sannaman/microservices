@@ -18,14 +18,6 @@ spec:
           backend:
             serviceName: nginx-deploy-main
             servicePort: 80        
-        - path: /green
-          backend:
-            serviceName: nginx-deploy-green
-            servicePort: 80
-        - path: /blue
-          backend:
-            serviceName: nginx-deploy-blue
-            servicePort: 80
         - path: /ms1
           backend:
             serviceName: ms1
